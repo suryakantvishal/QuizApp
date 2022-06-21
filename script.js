@@ -40,7 +40,7 @@ function showQuestion(data) {
   let incorrectAnswer = data.incorrect_answers;
   let optionsList = incorrectAnswer;
   optionsList.splice(
-    Math.floor(Math.random() + (incorrectAnswer.length + 1)),
+    Math.floor(Math.random() * (incorrectAnswer.length + 1)),
     0,
     correctAnswer
   );
